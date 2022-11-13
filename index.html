@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      p{
+        color: red;
+      }
+    </style>
+</head>
+<body>
+<p>1.You are provided with two numbers A and B
+  . Your task is to add these two numbers.
+  
+  Note: You have to complete AddTwoNumbers function. No need to take any input.</p>
+<pre>
+
+const AddTwoNumbers = (a,b) => {
+    return a+b;
+};
+Input
+2 5 
+
+Output
+7
+</pre>
+<p>2.You are given two number first as A and second as  B and check if both conditions (A<10 and A>B) are satisfied or not with the help of operators.</p>
+<pre>
+const Is_Valid = (a,b) => {
+    return (a<10 && a>b);
+ };
+Input
+5 3 
+      
+Output
+ true      
+</pre>
+<p>3.You are given two numbers A and B. You need to do the following checks:
+  1.if both are divisible by 10 console true.
+  2.if both are not divisible by 10 console false.
+  3.if one of them only is divisible by 10 console true.
+  Use operator to do this.</p>
+<pre>
+    const Check = (A, B) => 
+{
+  if(A%10===0 && B%10===0){
+    return ("true")
+  }
+   else if(A%10===0 || B%10===0){
+     return ("true")
+   }
+   else {
+     return ("false")
+   }
+};
+Input
+12 20
+
+Output
+true
+</pre>
+<p>4.You are provided a four digit number N only. Your task is to print out the first digit of that number.</p>
+<pre>
+    const First_Digit = (n) => {
+        var a = n/1000;
+        var b = parseInt(a);
+        return b;
+        
+          
+      };
+      Input
+4567
+
+Output
+4
+</pre>
+<p>5.You are provided a four digit number N only. Your task is to print out the last digit of that number.</p>
+<pre>
+    const Last_Digit = (n) => {
+        var a= n%10;
+        return a;
+     };
+     Input
+4567
+
+Output
+7
+</pre>
+<p>6.You are provided with two numbers A and  B where A as  divisor and B
+   as  dividend.Your task is find the remainder.</p>
+<pre>
+  const Find_the_remainder = (a,b) => {
+    var rem = b%a;
+    return (rem);
+    
+      
+  };
+  Input
+2 9
+
+Output
+1
+</pre>
+<p>7.You are provided with two numbers A and B. Your task is to multiply these two numbers.</p>
+<pre>
+  const Multiply_two_number = (a,b) => {
+  
+    return (a*b)
+      
+  };
+  Input
+2 5
+
+Output
+10
+</pre>
+<p>8.Shyam has got his marks in three subjects as A,B, and C
+   (out of 100).Write a program to calculate his total marks and his average.</p>
+<pre>
+  const Sum = (A, B, C) => 
+{
+  sum = A+B+C;
+ return (sum);
+};
+
+const Average = (A, B, C) => 
+{
+ var avg =(A+B+C)/3;
+ return (avg);
+};
+Input
+50 20 100
+
+Output
+170
+56.666666666666664
+</pre>
+
+<script src="./main.js"></script>
+</body>
+</html>
